@@ -24,6 +24,8 @@ public class ChatMessage implements Listener {
             temp = temp.replaceAll(":java:", "\u2615");
         if (player.hasPermission("chatmoji.shrug"))
             temp = temp.replaceAll(":shrug:", "\u00AF\\\\_(\u30C4)_/\u00AF");
+        if (player.hasPermission("chatmoji.tableflip"))
+            temp = temp.replaceAll(":tableflip:", "(\u256F\u00B0\u25A1\u00B0)\u256F\u2054\u253B\u2501\u253B");
         event.setMessage(temp);
     }
 
