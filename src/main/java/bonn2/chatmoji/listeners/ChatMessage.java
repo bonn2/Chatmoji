@@ -17,7 +17,7 @@ public class ChatMessage implements Listener {
         if (player.hasPermission("chatmoji.star"))
             temp = coloredReplaceAll(temp, ":star:", ChatColor.GOLD + "\u272F");
         if (player.hasPermission("chatmoji.yes"))
-            temp = coloredReplaceAll(temp, ":yes:", ChatColor.GREEN + "\u2713");
+            temp = coloredReplaceAll(temp, ":yes:", ChatColor.GREEN + "" + ChatColor.BOLD + "\u2713");
         if (player.hasPermission("chatmoji.no"))
             temp = coloredReplaceAll(temp, ":no:", ChatColor.RED + "\u274C");
         if (player.hasPermission("chatmoji.java"))
